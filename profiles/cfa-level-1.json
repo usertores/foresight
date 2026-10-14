@@ -1,0 +1,22 @@
+{
+  "subject": "CFA Level I",
+  "context": "The student is preparing for the CFA Level I exam.",
+  "language": "en",
+  "vocabulary": [
+    "reading", "learning module", "Macaulay duration", "modified duration", "convexity",
+    "callable", "putable", "yield to maturity", "spread", "WACC", "IFRS", "US GAAP", "EBITDA",
+    "free cash flow", "Sharpe ratio", "CAPM", "beta", "forward", "swap", "call", "put",
+    "Ethics Standards"
+  ],
+  "sources": [
+    { "label": "Curriculum", "match": ["curriculum"] },
+    { "label": "Mocks", "match": ["mock"] },
+    { "label": "Questions", "match": ["question"] }
+  ],
+  "examples": [
+    "What is Macaulay duration and how does it relate to modified duration?",
+    "Differences between IFRS and US GAAP for inventories",
+    "WACC formula",
+    "Standard III(C) Suitability"
+  ]
+}

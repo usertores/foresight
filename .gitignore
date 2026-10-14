@@ -1,0 +1,22 @@
+# Local models, runtime binaries, the generated index and personal settings
+runtime/
+models/
+data/
+config.json
+# Default study folder (the app asks for one on first run)
+library/
+# Interrupted downloads from scripts/setup.ps1
+*.part
+
+# Python
+backend/.venv/
+__pycache__/
+
+# Frontend / Tauri
+app/node_modules/
+app/dist/
+app/src-tauri/target/
+app/src-tauri/gen/
+
+# macOS
+.DS_Store

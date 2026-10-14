@@ -1,0 +1,22 @@
+{
+  "subject": "Organic Chemistry",
+  "context": "The student is taking a university course in organic chemistry.",
+  "language": "en",
+  "vocabulary": [
+    "nucleophile", "electrophile", "SN1", "SN2", "E1", "E2", "carbocation", "stereocenter",
+    "enantiomer", "diastereomer", "chirality", "resonance", "aromaticity", "Grignard reagent",
+    "aldol condensation", "NMR", "IR spectroscopy"
+  ],
+  "sources": [
+    { "label": "Textbook", "match": ["textbook"] },
+    { "label": "Slides", "match": ["slides", "lecture"] },
+    { "label": "Problem sets", "match": ["problem", "exercise", "homework"] },
+    { "label": "Exams", "match": ["exam", "midterm", "final"] }
+  ],
+  "examples": [
+    "When does a reaction go through SN1 instead of SN2?",
+    "How do I tell enantiomers from diastereomers?",
+    "Mechanism of the aldol condensation",
+    "What makes a compound aromatic?"
+  ]
+}

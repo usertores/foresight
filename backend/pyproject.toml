@@ -1,0 +1,35 @@
+[project]
+name = "foresight"
+version = "0.1.0"
+description = "Local semantic search, Q&A and class notes over your study materials"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.143.0",
+    "httpx>=0.28.1",
+    "lancedb>=0.40.0; sys_platform != 'darwin' or platform_machine != 'x86_64'",
+    # The last lancedb with wheels for Intel Macs (a Mac client builds its own index).
+    "lancedb==0.25.3; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "numpy>=2.5.4",
+    "pyarrow>=26.0.0",
+    "pymupdf>=1.28.2",
+    # OCR on macOS (Apple Vision); Windows uses Windows.Media.Ocr (winrt-* below).
+    "pyobjc-framework-vision>=12.2.2; sys_platform == 'darwin'",
+    "soundcard>=0.4.6",
+    "uvicorn[standard]>=0.54.0",
+    "webrtcvad-wheels>=2.0.14.post1",
+    "winrt-runtime>=3.2.1; sys_platform == 'win32'",
+    "winrt-windows-foundation>=3.2.1; sys_platform == 'win32'",
+    "winrt-windows-foundation-collections>=3.2.1; sys_platform == 'win32'",
+    "winrt-windows-globalization>=3.2.1; sys_platform == 'win32'",
+    "winrt-windows-graphics-imaging>=3.2.1; sys_platform == 'win32'",
+    "winrt-windows-media-ocr>=3.2.1; sys_platform == 'win32'",
+    "winrt-windows-storage-streams>=3.2.1; sys_platform == 'win32'",
+]
+
+[project.scripts]
+foresight = "foresight:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
